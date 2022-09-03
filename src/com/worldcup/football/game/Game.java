@@ -42,8 +42,8 @@ public class Game {
      */
 	public void updateScore(Integer homeScore, Integer awayScore) {
 		if(homeScore<0 || awayScore<0) {
-			this.match.getScores().setHomeTeamScore(0);
-			this.match.getScores().setAwayTeamScore(0);
+			this.match.getScores().setHomeTeamScore(homeScore<0?0:homeScore);
+			this.match.getScores().setAwayTeamScore(awayScore<0?0:awayScore);
 		}else {
 		this.match.getScores().setHomeTeamScore(homeScore);
 		this.match.getScores().setAwayTeamScore(awayScore);

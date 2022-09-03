@@ -32,6 +32,9 @@ public class WorldCupMain {
 		argentinaVsAustralia.updateScore(-3, -1);
 		ScoreBoard.showScoreBoard();
 		
+		argentinaVsAustralia.updateScore(-3, 6);
+		ScoreBoard.showScoreBoard();
+		
 		mexicoVsCanada.finishGame();
 		spainVsBrazil.finishGame();
 		germanyVsFrance.finishGame();

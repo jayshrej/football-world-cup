@@ -62,7 +62,7 @@ public class ScoreBoard {
      */
 	public static void showScoreBoard() {
 		getSummaryByTotalScore();
-		System.out.println("Score Board:");
+		System.out.println("\nScore Board:");
 
 		for (Match match : matches) {
 			System.out.println(match);
