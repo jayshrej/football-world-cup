@@ -61,11 +61,12 @@ public class ScoreBoard {
      * @return  void
      */
 	public static void showScoreBoard() {
-		getSummaryByTotalScore();
-		System.out.println("\nScore Board:");
-
+		getSummaryByTotalScore();		
+		int count=1;
+		System.out.println("");
 		for (Match match : matches) {
-			System.out.println(match.getPlayers().getHomeTeam()+" "+ match.getScores().getHomeTeamScore()+" - "+ match.getPlayers().getAwayTeam()+" "+ match.getScores().getAwayTeamScore());
+			System.out.println(count +". " +match.getPlayers().getHomeTeam()+" "+ match.getScores().getHomeTeamScore()+" - "+ match.getPlayers().getAwayTeam()+" "+ match.getScores().getAwayTeamScore());
+			count++;
 		}
 
 	}
