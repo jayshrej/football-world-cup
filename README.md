@@ -10,7 +10,7 @@ will be returned ordered by the most recently added to our system.
 4. Heap memory should be configured for the max allowed active matches.
 
 Time and Space complexity calculations: 
-1. Time complexity of the algorithm: O(n)
+1. Time complexity of the algorithm: O(nlogn), due to use of sorting. 
 2. Space complexity is: O(n), due to use of an extra list in getSummaryByTotalScore() method.
 
 Main file: com.worldcup.football.main.WorldCupMain.java
