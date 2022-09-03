@@ -16,7 +16,7 @@ public class WorldCupMain {
 		mexicoVsCanada.updateScore(0, 5);
 		
 		spainVsBrazil.startGame("Spain","Brazil");
-		mexicoVsCanada.updateScore(10, 2);
+		spainVsBrazil.updateScore(10, 2);
 		
 		germanyVsFrance.startGame("Germany","France");
 		germanyVsFrance.updateScore(2, 2);
@@ -28,7 +28,16 @@ public class WorldCupMain {
 		argentinaVsAustralia.updateScore(3, 1);	
 		
 		ScoreBoard.showScoreBoard();
-	
+		
+		// Finished games should be removed from the Score board
+		uruguayVsItaly.finishGame();		
+		ScoreBoard.showScoreBoard();
+		
+		//Score shouldn't be less than 0
+		argentinaVsAustralia.updateScore(-3, -1);
+		ScoreBoard.showScoreBoard();
+		
+		
 	}
 
 }

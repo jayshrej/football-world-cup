@@ -1,0 +1,33 @@
+package com.worldcup.football.model;
+
+public class PlayerTeams {
+	private String homeTeam;
+	private String awayTeam;
+
+	@Override
+	public String toString() {
+		return this.homeTeam + " - " + this.awayTeam;
+	}
+
+	public PlayerTeams(String homeTeam, String awayTeam) {
+		this.homeTeam = homeTeam;
+		this.awayTeam = awayTeam;
+	}
+
+	public String getHomeTeam() {
+		return this.homeTeam;
+	}
+
+	public void setHomeTeam(String homeTeam) {
+		this.homeTeam = homeTeam;
+	}
+
+	public String getAwayTeam() {
+		return this.awayTeam;
+	}
+
+	public void setAwayTeam(String awayTeam) {
+		this.awayTeam = awayTeam;
+	}
+
+}
