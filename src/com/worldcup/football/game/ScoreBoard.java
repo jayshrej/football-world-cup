@@ -65,7 +65,7 @@ public class ScoreBoard {
 		System.out.println("\nScore Board:");
 
 		for (Match match : matches) {
-			System.out.println(match);
+			System.out.println(match.getPlayers().getHomeTeam()+" "+ match.getScores().getHomeTeamScore()+" - "+ match.getPlayers().getAwayTeam()+" "+ match.getScores().getAwayTeamScore());
 		}
 
 	}

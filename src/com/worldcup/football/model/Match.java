@@ -2,6 +2,12 @@ package com.worldcup.football.model;
 
 public class Match {
 	private PlayerTeams players;	
+	public PlayerTeams getPlayers() {
+		return players;
+	}
+	public void setPlayers(PlayerTeams players) {
+		this.players = players;
+	}
 	private Scores scores;	
 
 	public Match(String homeTeam, String awayTeam) {
