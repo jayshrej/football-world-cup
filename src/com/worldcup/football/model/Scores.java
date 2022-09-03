@@ -34,10 +34,25 @@ public class Scores implements Comparable<Scores>{
 		return this.homeTeamScore + "-" + this.awayTeamScore;
 	}
 
+	/**
+     * Calculates the sum of scores for a match.
+     *
+     * @param   void
+     * @return  total of the scores.
+     *          
+     */
 	public Integer getSumOfScores() {
 		return this.awayTeamScore+ this.homeTeamScore;
 	}
 	
+	/**
+     * Compares two match scores.
+     * @param   o   the object to compare with.
+     * @return  {@code -1} is sum of scores of current match is higher than the sum of scores of the argument score.
+     * 			{@code 1} is sum of scores of current match is less than the sum of scores of the argument score.
+     * 			{@code 0} is sum of scores of current match is equal to the sum of scores of the argument score.
+     *   
+     */
 	@Override
 	public int compareTo(Scores o) {
 		return -1*this.getSumOfScores().compareTo(o.getSumOfScores());
